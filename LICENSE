@@ -1,4 +1,139 @@
-MIT License
+Copyright 2026. Troupe Inc. 
+⸻
+
+Troupe Inc. — Proprietary Repository Notice & License
+
+IMPORTANT — READ BEFORE VIEWING, CLONING, OR USING THIS REPOSITORY
+
+This repository and all contents contained herein are the exclusive intellectual property of Troupe Inc.
+By accessing, viewing, cloning, or interacting with this repository in any form, you acknowledge and agree to the terms set forth below.
+
+This is NOT an open-source project.
+This repository is governed by a Custom Proprietary License defined by Troupe Inc.
+
+⸻
+
+1. OWNERSHIP & INTELLECTUAL PROPERTY
+
+All materials in this repository are owned solely by Troupe Inc., including but not limited to:
+
+• Source code (frontend, backend, scripts, workflows, automations)
+• System architecture and platform design
+• Database schemas, data models, and ledger structures
+• AI prompts, agents, orchestration logic, and workforce designs
+• Documentation, specifications, diagrams, and planning artifacts
+• Naming systems, terminology, internal protocols, and methodologies
+• Any derivative works, refactors, or generated outputs thereof
+
+No ownership, license, or rights are transferred by viewing or accessing this repository.
+
+⸻
+
+2. PERMITTED USE (LIMITED)
+
+You are permitted to:
+
+• View the repository for evaluation and educational reference only
+• Review architectural patterns for non-commercial, non-competing insight
+• Run the code only if explicitly authorized by Troupe Inc.
+• Collaborate only if formally invited and approved
+
+Any use beyond these narrow allowances is strictly prohibited.
+
+⸻
+
+3. PROHIBITED USES (STRICTLY ENFORCED)
+
+You may NOT, without explicit written permission from Troupe Inc.:
+
+• Copy, clone, fork, mirror, or redistribute this repository
+• Use any portion for commercial purposes
+• Deploy this system or any derivative in production
+• Train AI models on the code, prompts, or documentation
+• Repackage or resell components, systems, or workflows
+• Recreate or imitate the architecture for competing platforms
+• Publish, blog, tutorialize, or teach from this repository
+• Remove or alter this notice
+
+Violation of these terms constitutes unauthorized use of proprietary intellectual property.
+
+⸻
+
+4. AI-GENERATED & AI-ORCHESTRATED CONTENT
+
+All AI-generated components within this repository — including prompts, agent logic, workflows, schemas, and outputs — are considered first-class proprietary IP of Troupe Inc.
+
+AI assistance does not place any portion of this repository in the public domain.
+
+No rights are granted to reuse AI prompts, workforce logic, or orchestration strategies.
+
+⸻
+
+5. CONTRIBUTORS & COLLABORATION
+
+Any human or AI contributor:
+
+• Operates under Troupe Inc. governance
+• Retains no ownership or reuse rights
+• Assigns all contributions to Troupe Inc.
+• May not reuse contributed material elsewhere
+
+Contribution does not imply partnership, employment, or license grant.
+
+⸻
+
+6. LIVING SYSTEM NOTICE
+
+This repository is part of a living system under active development.
+
+• Structures, code, and documentation may change at any time
+• No guarantees of stability, backward compatibility, or support
+• No obligation to notify users of changes
+
+Use at your own risk.
+
+⸻
+
+7. NO WARRANTY / NO LIABILITY
+
+This repository is provided “AS IS”, without warranty of any kind, express or implied.
+
+Troupe Inc. disclaims all liability for:
+
+• Data loss
+• System failure
+• Security issues
+• Financial or operational impact
+
+⸻
+
+8. ENFORCEMENT & GOVERNING LAW
+
+Unauthorized use, reproduction, or distribution may result in:
+
+• Immediate revocation of access
+• Legal action
+• Claims for damages and injunctive relief
+
+This license is governed by the laws applicable to Troupe Inc.’s jurisdiction.
+
+⸻
+
+9. CONTACT & AUTHORIZATION
+
+For licensing inquiries, partnerships, or written authorization requests:
+
+Troupe Inc.
+Official authorization must be explicit and written.
+
+⸻
+
+FINAL NOTICE
+
+If you do not agree to these terms, do not access, clone, or use this repository.
+
+⸻
+
 
 Copyright (c) 2025 Troupe Inc.
 
