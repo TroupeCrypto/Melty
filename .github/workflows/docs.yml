@@ -16,11 +16,10 @@ jobs:
       
       - name: Check documentation links
         run: |
-          echo "Checking for broken links in markdown files..."
-          # Find all markdown files
-          find . -name "*.md" -not -path "./node_modules/*" -type f | while read file; do
-            echo "Checking: $file"
-          done
+          echo "Link checking will be configured once projects are added"
+          # Placeholder for future link validation
+          # Future: Use a tool like markdown-link-check
+          find . -name "*.md" -not -path "./node_modules/*" -type f | wc -l | xargs echo "Found markdown files:"
       
       - name: Validate structure
         run: |

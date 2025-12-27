@@ -16,7 +16,7 @@ jobs:
       - name: Check for common issues
         run: |
           # Check for TODO/FIXME comments in new code
-          if git diff origin/main...HEAD | grep -E '^\+.*TODO|FIXME'; then
+          if git diff origin/main...HEAD | grep -E '^\+.*\b(TODO|FIXME)\b'; then
             echo "Warning: Found TODO/FIXME in new code"
           fi
           
@@ -61,11 +61,11 @@ jobs:
       
       - name: Run tests
         run: |
-          # Placeholder for running tests across projects
-          echo "Tests will be configured per project"
-          # Find projects with test scripts and run them
+          echo "Test execution will be configured per project as they are added"
+          # Placeholder - actual test runners will be added per project
+          # Future: Detect and run project-specific test commands
           for dir in apps/* libs/* services/* tools/*; do
-            if [ -d "$dir" ]; then
-              echo "Checking $dir for tests..."
+            if [ -d "$dir" ] && [ "$(basename "$dir")" != "README.md" ]; then
+              echo "Project directory: $dir"
             fi
           done
