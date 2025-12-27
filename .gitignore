@@ -1,0 +1,80 @@
+# Troupe Inc. Universe - Global .gitignore
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Build Artifacts
+dist/
+build/
+out/
+target/
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+*.app
+
+# Dependency Directories
+node_modules/
+vendor/
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Logs and Databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Environment and Config
+.env.local
+.env.*.local
+*.local
+secrets.yml
+secrets.yaml
+
+# Testing
+coverage/
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
+
+# Package Manager Lock Files (project-specific ones should override this)
+# Uncomment if you want to ignore lock files globally
+# package-lock.json
+# yarn.lock
+# Gemfile.lock
+# Pipfile.lock

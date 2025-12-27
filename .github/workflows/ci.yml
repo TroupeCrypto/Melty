@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check for common issues
+        run: |
+          # Check for TODO/FIXME comments in new code
+          if git diff origin/main...HEAD | grep -E '^\+.*\b(TODO|FIXME)\b'; then
+            echo "Warning: Found TODO/FIXME in new code"
+          fi
+          
+      - name: Validate markdown files
+        run: |
+          # Check that README files exist in main directories
+          for dir in apps libs services tools docs scripts; do
+            if [ -d "$dir" ] && [ ! -f "$dir/README.md" ]; then
+              echo "Error: Missing README.md in $dir/"
+              exit 1
+            fi
+          done
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project-type: [apps, libs, services, tools]
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Build ${{ matrix.project-type }}
+        run: |
+          # Find and build all projects in the category
+          if [ -d "${{ matrix.project-type }}" ]; then
+            echo "Checking ${{ matrix.project-type }} directory..."
+            # This is a placeholder - actual build steps will be added per project
+            for project in ${{ matrix.project-type }}/*/; do
+              if [ -d "$project" ]; then
+                echo "Found project: $project"
+              fi
+            done
+          fi
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run tests
+        run: |
+          echo "Test execution will be configured per project as they are added"
+          # Placeholder - actual test runners will be added per project
+          # Future: Detect and run project-specific test commands
+          for dir in apps/* libs/* services/* tools/*; do
+            if [ -d "$dir" ] && [ "$(basename "$dir")" != "README.md" ]; then
+              echo "Project directory: $dir"
+            fi
+          done
